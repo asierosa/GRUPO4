@@ -1,0 +1,97 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link href="../CSS/estilos.css" rel="stylesheet">
+    <link href="../CSS/consulta.css" rel="stylesheet">
+    
+</head>
+<body>
+        <div class="pagina">
+    <div class="franjaAlta">
+        <div id="logo">
+            <a href="../index.html">
+                <img src="../IMG/logo.png" width="120" height="61" alt>
+            </a>
+        </div>
+        <div id="fondoVerde">
+            <div id="onlineShop" class="onlineShop">
+                <div id= "logIn" class="logIn">
+                    <a id="enter" class="enter" href="login.html">Entra o regístrate </a>
+                </div>
+                <div id="selecShop" class="selecShop">
+                   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+    <div id="content">
+    <div class="contenedor-flex">
+        <div class="boton-flex">
+            <a href="mantenimiento.html" title="Portatiles, Sobremesa, perifericos...">Mantenimiento de Ordenadores</a>
+        </div>
+        <div class="boton-flex">
+            <a href="reparacion.html" title="Reparación de sistemas...">Reparación</a>
+        </div>
+        <div class="boton-flex">
+            <a href="consulta.html" title="Preguntanos lo que sea">Consultas</a>
+        </div>
+    </div>
+    </div>
+    <div class="container">        
+  <form action="../PHP/email.php" method="post">
+    <div class="row">
+      <div class="col-25">
+        <label for="nombre">Nombre</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="lname">Apellido</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+      </div>
+    </div>
+      <div class="row">
+      <div class="col-25">
+        <label for="email">Email</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="email" name="email" placeholder="Email">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="pais">Pais</label>
+      </div>
+      <div class="col-75">
+        <select id="pais" name="pais">
+          <option value="españa">España</option>
+          <option value="francia">Francia</option>
+          <option value="alemania">Alemania</option>
+        </select>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="asunto">Asunto</label>
+      </div>
+      <div class="col-75">
+        <textarea id="asunto" name="asunto" placeholder="Escriba su consulta" style="height:200px"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <input type="submit" value="Enviar">
+    </div>
+  </form>
+</div>
+</div>
+</body>
+</html>
